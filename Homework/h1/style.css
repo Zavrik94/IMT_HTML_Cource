@@ -1,0 +1,47 @@
+.head {
+	text-align: center;
+}
+
+.main {
+	width: 60%;
+	margin: 0 auto;
+	height: 70em;
+}
+
+table, tr, td, th {
+	/*border: 1px solid black;*/
+}
+.main-table, .main-table table  {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.left-part {
+	height: 100%;
+	width: 30%;
+}
+
+.right-part {
+	widows: 70%;
+}
+
+.main-table {
+	height: 90%;
+	width: 100%;
+}
+
+.left-table {
+	height: 100%;
+	width: 100%;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.h-100 {
+	height: 100%;
+}
+
+.text-center {
+	text-align: center;
+}

@@ -1,0 +1,35 @@
+div {
+	padding: 10px;
+	margin: 10px 0;
+}
+
+body > div:nth-child(1) {
+	background-color: red;
+	float: left;
+}
+
+body > div:nth-child(2) {
+	background-color: orange;
+	float: left;
+}
+
+body > div:nth-child(3) {
+	background-color: yellow;
+	float: right;
+}
+
+body > div:nth-child(4) {
+	background-color: green;
+}
+
+ div div:nth-child(1) {
+ 	background-color: blue;
+ }
+
+ div div:nth-child(2) {
+ 	background-color: violet;
+ }
+
+ div div:nth-child(3) {
+ 	background-color: purple;
+ }

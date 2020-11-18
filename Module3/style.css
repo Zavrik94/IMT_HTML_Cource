@@ -1,3 +1,7 @@
 ul:first-child > ul > li {
 	background-color: red;
+}]
+
+li:hover {
+	background-color: yellow;
 }

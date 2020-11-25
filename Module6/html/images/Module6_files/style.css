@@ -1,0 +1,36 @@
+body {
+	background-color: #08F0F0;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	background-color: #FA09FA;
+	width: 700px;
+	margin: auto;
+	height: 100vh;
+}
+
+.header {
+	background-color: #80FC02;
+	height: 100px;
+}
+
+.left-side {
+	background-color: #6002AA;
+	float: left;
+	width: 150px;
+	height: calc(100% - 100px - 50px);
+}
+
+.content {
+	background-color: #AA30FD;
+}
+
+.footer {
+	background-color: #0103FC;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	width: inherit;
+}

@@ -1,0 +1,13 @@
+/*.modal-content {
+	background-color: red;
+}
+
+.modal-header {
+	border-bottom: 1px solid orange;
+}*/
+.w-75 {
+	transition: all 150ms ease;
+} 
+.w-100 {
+	transition: all 150ms ease;
+} 

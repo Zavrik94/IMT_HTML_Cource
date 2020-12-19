@@ -1,0 +1,14 @@
+.quote:not(:first-child)::before {
+	content: "\"";
+	margin-left: 5px;
+}
+
+.quote:not(:first-child)::after {
+	content: "\"";
+	margin-right: 5px;
+}
+
+.quote:hover::after {
+	background-color: red;
+	content: 'hello';
+}

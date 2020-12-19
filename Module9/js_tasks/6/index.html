@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1</title>
+</head>
+<body>
+	<input type="text" id="input" name=""/>
+<script type="text/javascript">
+	document.getElementById('input').addEventListener('input', (event) => {
+		let input = document.getElementById('input').value;
+		if (input.length > 1 && input[input.length - 1] === input[input.length - 2]) {
+			document.getElementById('input').setAttribute('disabled', true);	
+		}
+	});
+</script>
+</body>
+</html>

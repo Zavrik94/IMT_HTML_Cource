@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1</title>
+</head>
+<body>
+	<input type="text" id="input" name=""/>
+	<a href="#" id="calc">Calc!</a>
+	<input type="text" id="output" name=""/>
+<script type="text/javascript">
+	let array = [];
+	function isOdd(num) {
+		return num % 2 === 0;
+	}
+	function getCalculation(num) {
+		array.push(num);
+		if (num === 1) {
+			return;
+		}
+		if (isOdd(num)) {
+			num /= 2;
+		} else {
+			num = (num * 3 + 1)/2;
+		}
+		getCalculation(num);
+	}
+	document.getElementById('calc').addEventListener('click', () => {
+		let input = document.getElementById('input').value;
+		getCalculation(parseInt(input));
+		document.getElementById('output').value = array.join(', ')
+		array = [];
+	});
+</script>
+</body>
+</html>

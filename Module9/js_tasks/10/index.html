@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1</title>
+</head>
+<body>
+	<input type="text" id="input" name=""/>
+	<a href="#" id="calc">Calc!</a>
+	<input type="text" id="output" name=""/>
+<script type="text/javascript">
+	let rndNumber = Math.floor(Math.random()*100)+1;
+	let up = 100;
+	let down = 1;
+	document.getElementById('calc').addEventListener('click', () => {
+		let input = document.getElementById('input').value;
+		if (parseInt(input) === 0) {
+			document.getElementById('output').value = rndNumber;
+			document.getElementById('input').setAttribute('disabled', true);
+		} else if (parseInt(input) === rndNumber) {
+			document.getElementById('output').value = 'BINGO!!!';
+			document.getElementById('input').setAttribute('disabled', true);
+		} else {
+			if (parseInt(input) > rndNumber) {
+				up = parseInt(input);
+				document.getElementById('output').value = 'Lower! Number between ' + down + ' and ' + up;
+			}
+			if (parseInt(input) < rndNumber) {
+				down = parseInt(input);
+				document.getElementById('output').value = 'Bigger! Number between ' + down + ' and ' + up;
+			}
+		}
+	});
+</script>
+</body>
+</html>

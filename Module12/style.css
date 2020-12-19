@@ -1,0 +1,46 @@
+.content header {
+	background-color: yellow;
+	min-height: 100px;
+}
+
+.content nav {
+	background-color: orange;
+}
+
+.content footer {
+	background-color: purple;
+	min-height: 100px;
+}
+.content > div > div {
+	position: absolute;
+}
+
+.content > div {
+	position: relative;
+	height: 70vh;
+}
+
+.content >div > div:nth-child(2) {
+	left: 200px;
+	width: calc(inherit - 400px);
+}
+
+.content > div > div:first-child {
+	background-color: red;
+	height: 100%;
+	width: 200px;
+	left: 0;
+}
+
+.content > div > div:last-child {
+	background-color: brown;
+	height: 100%;
+	width: 200px;
+	right: 0;
+}
+
+@media screen and (max-width: 980px){
+	.content > div > div:not(:nth-child(2)) {
+		display: none;
+	}
+}

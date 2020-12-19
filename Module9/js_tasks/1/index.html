@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1</title>
+</head>
+<body>
+	<input type="text" id="input" name=""/>
+	<a href="#" id="calc">Calc!</a>
+	<input type="text" id="output" name=""/>
+<script type="text/javascript">
+	function isOdd(num) {
+		return num % 2 === 0;
+	}
+	document.getElementById('calc').addEventListener('click', () => {
+		let input = document.getElementById('input').value;
+		let sum = 0;
+		for (i = 0; i < input.length; i++) {
+			if (isOdd(input[i])) {
+				sum += parseInt(input[i]);
+			}
+		}
+		document.getElementById('output').value = sum;
+	});
+</script>
+</body>
+</html>

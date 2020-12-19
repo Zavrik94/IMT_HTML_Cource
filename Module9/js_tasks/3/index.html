@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1</title>
+</head>
+<body>
+	<input type="text" id="input" name=""/>
+	<a href="#" id="calc">Calc!</a>
+	<input type="text" id="output" name=""/>
+<script type="text/javascript">
+	function factorial(num) {
+		if (num === 0) {
+			return 1;
+		}
+		return num * factorial(num - 1);
+	}
+	document.getElementById('calc').addEventListener('click', () => {
+		let input = document.getElementById('input').value;
+		let output = factorial(input);
+		document.getElementById('output').value = output;
+	});
+</script>
+</body>
+</html>

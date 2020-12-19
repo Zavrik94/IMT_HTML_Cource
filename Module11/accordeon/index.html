@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accordeon</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="accordeon">
+		<div>
+			<div>
+				theme 1
+			</div>
+			<div>
+				test 1
+			</div>
+		</div>
+		<div>
+			<div>
+				theme 2
+			</div>
+			<div>
+				test 2
+			</div>
+		</div>
+		<div>
+			<div>
+				theme 3
+			</div>
+			<div>
+				test 3
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	let click = document.querySelectorAll('.accordeon > div > div:first-child');
+	Array.prototype.forEach.call(click, function(el) {
+    el.addEventListener('click', function () {
+    	let content = this.nextElementSibling;
+    	content.classList.toggle('active');
+    });
+});
+
+</script>
+</html>

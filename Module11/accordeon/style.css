@@ -1,0 +1,21 @@
+.accordeon > div {
+	width: 50%;
+	margin: 5px auto;
+}
+
+.accordeon > div > div {
+	border: 1px solid black;
+	margin: 5px;
+}
+
+.accordeon > div > div:last-child {
+	height: 0px;
+	overflow: hidden;
+	border: 0px solid black;
+	transition: height 1s ease-in-out;
+}
+
+.accordeon > div > div:last-child.active {
+	height: auto;
+	border: 1px solid black;
+}

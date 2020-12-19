@@ -1,0 +1,22 @@
+.menu ul {
+	padding: 0;
+	width: 50%;
+	margin: 50px auto 0;
+}
+.menu li {
+	display: inline-block;
+	min-width: 150px;
+	border: 1px solid black;
+	text-align: center;
+	background-color: red;
+	color:blue;
+	border-radius: 15px;
+	padding: 15px 0;
+}
+
+.menu li:hover {
+	background-color: yellow;
+	color: green;
+	transform: translate(-10px, -10px);
+	transition: 0.2s;
+}

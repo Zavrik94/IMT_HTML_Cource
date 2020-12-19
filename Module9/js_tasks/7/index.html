@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1</title>
+</head>
+<body>
+	<input type="text" id="input" name=""/>
+	<a href="#" id="calc">Calc!</a>
+	<input type="text" id="output" name=""/>
+<script type="text/javascript">
+	function getFibonache(num) {
+		console.log(num);
+		if (num === 1) {
+			return [0];
+		}
+		if (num === 2) {
+			return [0, 1];
+		}
+		let sum = [0, 1];
+		for(i = 2; i < num; i++) {
+			sum.push(sum[i-1] + sum[i-2]);
+		}
+		return sum;
+	}
+	document.getElementById('calc').addEventListener('click', () => {
+		let input = document.getElementById('input').value;
+		document.getElementById('output').value = getFibonache(parseInt(input)).join(', ');
+	});
+</script>
+</body>
+</html>

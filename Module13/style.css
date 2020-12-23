@@ -1,0 +1,84 @@
+body {
+	margin: 0;
+}
+.container {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 2fr 12fr 1fr;
+}
+
+.container > header {
+	display: flex;
+	background-color: grey;
+}
+
+.logo {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo > img {
+	max-width: 100px;
+	height: auto;
+}
+
+nav {
+	flex: 3;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+nav ul {
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav li {
+	display: inline-block;
+	min-width: 150px;
+	border: 1px solid black;
+	text-align: center;
+	background-color: red;
+	color:blue;
+	border-radius: 15px;
+	padding: 15px 0;
+}
+
+nav li:hover {
+	background-color: yellow;
+	color: green;
+	transform: translate(-10px, -10px);
+	transition: 0.2s;
+}
+
+.container > div {
+	display: flex;
+}
+
+.container > div > div:nth-child(1) {
+	flex: 1;
+	background-color: yellow;
+}
+
+.container > div > div:nth-child(2) {
+	flex: 4;
+	background-color: green;
+}
+
+.container > div > div:nth-child(3) {
+	flex: 1;
+	background-color: blue;
+}
+
+.container > footer {
+	display: flex;
+	background-color: red;
+}
